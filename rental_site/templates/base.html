@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block meta %}
+        <title>Продажа и аренда недвижимости в республики хакасия</title>
+        <meta name="description" content="Купить недвижимость в Хакасии, а также подобрать любые интересующие вас объекты недвижимости в Абакане и республики Хакасия" />
+    {% endblock %}
+
+    <!-- Custom CSS -->
+	<link href="{% static '/assets/css/styles.css' %}" rel="stylesheet">
+
+	<!-- Custom Color Option -->
+	<link href="{% static '/assets/css/colors.css' %}" rel="stylesheet">
+
+    {% block json_ld %}
+    {% endblock %}
+
+</head>
+<body class="yellow-skin">
+    <div id="main-wrapper">
+        {% block content %}
+        {% endblock %}
+    </div>
+<!-- ============================================================== -->
+<!-- All Jquery -->
+<!-- ============================================================== -->
+    <script src="{% static 'assets/js/jquery.min.js' %}"></script>
+    <script src="{% static 'assets/js/popper.min.js' %}"></script>
+    <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'assets/js/ion.rangeSlider.min.js' %}"></script>
+    <script src="{% static 'assets/js/select2.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'assets/js/slick.js' %}"></script>
+    <script src="{% static 'assets/js/slider-bg.js' %}"></script>
+    <script src="{% static 'assets/js/lightbox.js' %}"></script>
+    <script src="{% static 'assets/js/imagesloaded.js' %}"></script>
+    <script src="{% static 'assets/js/daterangepicker.js' %}"></script>
+    <script src="{% static 'assets/js/custom.js' %}"></script>
+<!-- ============================================================== -->
+<!-- This page plugins -->
+<!-- ============================================================== -->
+</body>
+</html>

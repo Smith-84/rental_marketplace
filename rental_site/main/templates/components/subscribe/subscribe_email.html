@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Подтверждение e-mail адреса</title>
+</head>
+<body>
+<h1>Новые объявление!</h1>
+    <ul>
+        {% for ad in ads %}
+            <li><a href="{{ ad.get_full_absolute_url }}">{{ ad.content_type.name }}, {{  ad.region.name }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
